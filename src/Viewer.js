@@ -9,7 +9,7 @@ import Detail from './Detail';
 import data from './data/data.json';
 import colors from './data/colors.json';
 
-export class PlasmidViewer extends Component {
+export default class PlasmidViewer extends Component {
   constructor(props) {
     super(props);
 
@@ -141,5 +141,3 @@ export class PlasmidViewer extends Component {
     );
   }
 }
-
-export default App;
