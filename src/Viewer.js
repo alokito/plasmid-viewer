@@ -126,7 +126,7 @@ export default class PlasmidViewer extends Component {
       }).value();
 
     // only include 3Dmol if not phone
-    var model = isMobile.phone ? null : (<Model {...this.state} />);
+    // var model = isMobile.phone ? null : (<Model {...this.state} />);
 
     return (
       <div className="App" style={style}>
@@ -134,7 +134,7 @@ export default class PlasmidViewer extends Component {
         <div style={featureListStyle}>
           {features}
         </div>
-        {model}
+        {/* {model} */}
         <br />
         <Detail {...props} {...this.state} />
       </div>
