@@ -30,6 +30,7 @@ export class PlasmidViewer extends Component {
       sequence: '',
       strand: 'double', // can be single or double
       selectedPhase: {},
+      data: this.props.data || data,
     };
 
     this.selectPhase = this.selectPhase.bind(this);
@@ -39,9 +40,9 @@ export class PlasmidViewer extends Component {
 
   componentWillMount() {
     // go through the features and attach corresponding DNA sequence
-    var sequence = data.sequence;
+    var sequence = this.state.data.sequence;
     var arcColors = d3.scaleOrdinal(d3.schemeCategory20);
-    var features = _.chain(data.features)
+    var features = _.chain(this.state.data.features)
       .map(feature => {
         var {name, start, end, arcColor} = feature;
         var subsequence = sequence.slice(start-1, end); // GenBank uses 1-based indexing
