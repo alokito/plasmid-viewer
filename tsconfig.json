@@ -1,0 +1,28 @@
+{
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ],
+    "compilerOptions": {
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "allowJs": true,
+        "target": "ES6",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "strictNullChecks": true,
+        "experimentalDecorators": true,
+        "alwaysStrict": true,
+        "listEmittedFiles": true,
+        "sourceMap": true,
+        "types": ["node"],
+        "lib": [
+            "es2015",
+            "es2015.iterable"
+        ]
+    }
+}
+

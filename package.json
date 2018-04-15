@@ -2,8 +2,17 @@
   "name": "plasmid-viewer",
   "version": "0.1.0",
   "private": false,
-  "main": "src/index.js",
-  "devDependencies": {},
+  "main": "dist/js/index.js",
+  "devDependencies": {
+    "@types/node": "^9.6.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-typescript": "^4.0.2",
+    "merge2": "^1.2.1",
+    "run-sequence": "^2.2.1",
+    "typescript": "^2.8.1"
+  },
   "dependencies": {
     "d3": "^4.8.0",
     "d3-scale-chromatic": "^1.1.1",

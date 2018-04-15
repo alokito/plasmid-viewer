@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import * as d3 from 'd3';
 import _ from 'lodash';
-import isMobile from 'ismobilejs';
+import * as isMobile from 'ismobilejs';
 
 var width = isMobile.phone ? window.innerWidth : 500;
 var height = isMobile.phone ? window.innerWidth : 500;

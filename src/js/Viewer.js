@@ -6,8 +6,8 @@ import isMobile from 'ismobilejs';
 import Overview from './Overview';
 import Model from './Model';
 import Detail from './Detail';
-import data from './data/data.json';
-import colors from './data/colors.json';
+import data from '../data/data.json';
+import colors from '../data/colors.json';
 
 export default class PlasmidViewer extends Component {
   constructor(props) {

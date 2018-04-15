@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import isMobile from 'ismobilejs';
+import * as isMobile from 'ismobilejs';
 
 var size = isMobile.phone ? window.innerWidth : 500;
 class Model extends Component {
@@ -37,7 +37,7 @@ class Model extends Component {
       feature.name === props.selectedPhase.name);
     if (!feature.pdbFile) return;
 
-    var pdbFile = require('./data/' + feature.pdbFile);
+    var pdbFile = require('../data/' + feature.pdbFile);
     var viewer = this.viewer;
 
     window['$'].ajax(pdbFile, {
