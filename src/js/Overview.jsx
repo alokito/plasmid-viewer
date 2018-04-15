@@ -12,7 +12,7 @@ var strandRadii = [innerRadius - 15, innerRadius - 10];
 var arc = d3.arc();
 var drag = d3.drag();
 
-class Overview extends Component {
+export class Overview extends Component {
 
   constructor(props) {
     super(props);
@@ -209,4 +209,3 @@ class Overview extends Component {
   }
 }
 
-export default Overview;

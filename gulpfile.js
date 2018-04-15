@@ -56,7 +56,7 @@ gulp.task('compile', () => {
 gulp.task('data', function () {
     return gulp.src([`${paths.src}/data/**/*`], {
         base: paths.src
-    }).pipe(gulp.dest('dist'));
+    }).pipe(gulp.dest(paths.dist));
 });
 
 gulp.task('bundle', ['clean-dist'], (cb) => {

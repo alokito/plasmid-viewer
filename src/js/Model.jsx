@@ -3,7 +3,7 @@ import _ from 'lodash';
 import * as isMobile from 'ismobilejs';
 
 var size = isMobile.phone ? window.innerWidth : 500;
-class Model extends Component {
+export class Model extends Component {
 
   componentDidMount() {
     // 3Dmol relies on jQuery, which gets loaded into the global namespace
@@ -107,4 +107,3 @@ class Model extends Component {
   }
 }
 
-export default Model;
