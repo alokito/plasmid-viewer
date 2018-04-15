@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
+import * as React from 'react';
+import * as _ from 'lodash';
 import * as d3 from 'd3';
 
 var margin = {left: 60, right: 20, top: 20, bottom: 20};
@@ -9,7 +9,7 @@ var rectHeight = 20;
 var fontSize = 14;
 var numChars = Math.floor(width / (fontSize * 0.6) / 3);
 
-export class Detail extends Component {
+export class Detail extends React.Component {
   constructor(props) {
     super(props);
 

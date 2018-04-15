@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
+import * as React from 'react';
+import * as _ from 'lodash';
 import * as d3 from 'd3';
-import isMobile from 'ismobilejs';
+import * as isMobile from 'ismobilejs';
 
-import Overview from './Overview';
-import Model from './Model';
-import Detail from './Detail';
-import data from '../data/data.json';
-import colors from '../data/colors.json';
+import { Overview } from './Overview';
+import { Model } from './Model';
+import { Detail } from './Detail';
+import * as data from '../data/data.json';
+import * as colors from '../data/colors.json';
 
-export class PlasmidViewer extends Component {
+export class PlasmidViewer extends React.Component {
   constructor(props) {
     super(props);
 

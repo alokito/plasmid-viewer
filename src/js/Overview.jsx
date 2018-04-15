@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 import * as d3 from 'd3';
-import _ from 'lodash';
+import * as _ from 'lodash';
 import * as isMobile from 'ismobilejs';
 
 var width = isMobile.phone ? window.innerWidth : 500;
@@ -12,7 +12,7 @@ var strandRadii = [innerRadius - 15, innerRadius - 10];
 var arc = d3.arc();
 var drag = d3.drag();
 
-export class Overview extends Component {
+export class Overview extends React.Component {
 
   constructor(props) {
     super(props);

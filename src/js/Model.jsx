@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
-import _ from 'lodash';
+import * as React from 'react';
+import * as _ from 'lodash';
 import * as isMobile from 'ismobilejs';
 
 var size = isMobile.phone ? window.innerWidth : 500;
-export class Model extends Component {
+export class Model extends React.Component {
 
   componentDidMount() {
     // 3Dmol relies on jQuery, which gets loaded into the global namespace
